@@ -1,0 +1,15 @@
+<ion-view view-title="Update Note">
+	<ion-content class="note-content">
+		<div class="row">
+			<div class="col">
+				
+				<div class="list list-inset" ng-repeat="item in items">
+				    <div class="item" ui-sref="updateSingleNote({ id: item.$id })">
+				      {{ item.title }}
+				    </div>
+				</div>
+
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,21 @@
+<ion-view view-title="Update Single Note">
+	<ion-content class="note-content">
+		<div class="row">
+			<div class="col">
+
+					<div class="list">
+					  <label class="item item-input">
+					    <input type="text" ng-model="title" placeholder="Title">
+					  </label>
+					  <label class="item item-input">
+					    <textarea ng-model="content" placeholder="Note"></textarea>
+					  </label>
+
+					  <button ng-click="updatenote(id, title, content)" class="button button-full button-calm" ng-disabled="!title || !content">Update Note</button>
+
+					</div>
+
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

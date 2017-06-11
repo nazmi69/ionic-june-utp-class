@@ -1,0 +1,23 @@
+<ion-view view-title="Add Note">
+	<ion-content class="note-content">
+		<div class="row">
+			<div class="col">
+
+				<form ng-submit="savenote(note)">
+					<div class="list">
+					  <label class="item item-input">
+					    <input type="text" ng-model="note.title" placeholder="Title">
+					  </label>
+					  <label class="item item-input">
+					    <textarea ng-model="note.content" placeholder="Note"></textarea>
+					  </label>
+
+					  <button type="submit" class="button button-full button-calm" ng-disabled="!note.title || !note.content">Save Note</button>
+
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
